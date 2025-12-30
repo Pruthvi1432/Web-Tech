@@ -1,38 +1,53 @@
-/* External CSS */
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Registration Form</title>
+<style> 
 body {
-    background-color: #f2f6ff;
-    font-family: Arial, Helvetica, sans-serif;
+font-family: Arial, sans-serif;
+margin: 20px;
+background-color: 
 }
+.form-container {
+width: 50%;
+margin: auto;
+padding: 20px;
+border: 1px solid 
+border-radius: 5px;
+box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+background: white;
+}
+input, select {
+width: 100%;
+padding: 10px;
+margin: 8px 0;
+border: 1px solid;
+border-radius: 4px;
+}
+.btn-submit {
+background-color:
+color: white;
+padding: 10px 15px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+.btn-submit:hover {
+background-color: 
+}
+</style>
+<link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+<div class="form-container">
+<h2 style="text-align:center;">Registration Form</h2> 
+<form>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+<label for="gender">Gender:</label>
+<select id="gender" name="gender">
 
-.container-box {
-    width: 450px;
-    margin: 60px auto;
-    padding: 25px;
-    border: 2px solid #0d6efd;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
-h2 {
-    text-align: center;
-    color: #0d6efd;
-    margin-bottom: 20px;
-}
-
-.form-control:focus {
-    border-color: #0d6efd;
-    box-shadow: 0 0 5px #0d6efd;
-}
-
-.btn-custom {
-    width: 100%;
-    background-color: #0d6efd;
-    color: white;
-    font-size: 16px;
-}
-
-.btn-custom:hover {
-    background-color: #084298;
-}
